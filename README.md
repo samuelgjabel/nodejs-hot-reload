@@ -13,13 +13,14 @@ or
 ### Use
 
 1. add this `script` to package.json
-   - for js
+
+- for `.js`
 
 ```json
   "scripts": {"watch":"npx nodejs-hot-reload entry=./src/app.js outDir=./build"},
 ```
 
-- or for ts
+- or for `.ts`
 
 ```json
   "scripts": {"watch":"npx nodejs-hot-reload entry=./src/app.ts outDir=./build"},
