@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-hot-reload",
+  "version": "0.0.1",
+  "description": "Node.js hot reloading library for faster development!",
+  "main": "index.js",
+  "repository": "https://github.com/samuelgjabel/nodejs-hot-reload.git",
+  "author": "samuel.gjabel@gmail.com",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node index"
+  },
+  "bin": {
+    "nodejs-hot-reload": "./index.js"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "cli-spinners": "^2.2.0",
+    "node-spinner": "^0.0.4",
+    "ora": "^4.0.3",
+    "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {
+    "typescript": "^3.7.5"
+  }
+}

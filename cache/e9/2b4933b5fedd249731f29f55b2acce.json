@@ -1,0 +1,1 @@
+{"id":"test.ts","dependencies":[{"name":"/Users/samuelgjabel/Documents/SUKROMNE/nodejs-hot-reload/package.json","includedInParent":true,"mtime":1581025854325}],"generated":{"js":"console.log({\n  samko: \"hellos\"\n});"},"sourceMaps":null,"error":null,"hash":"f431f00e9026cc31b76a165896f699a8","cacheData":{"env":{}}}
