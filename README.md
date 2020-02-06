@@ -53,3 +53,5 @@ or
 - works with typescript / javascript as well
 
 * note this library dont include typchecking for `typescript`. Your IDE do it for you.
+
+* Be aware of using relative `paths`.. as this library bundles output to 1 file.
