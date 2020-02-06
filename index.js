@@ -86,6 +86,9 @@ let spinner = ora("Building...");
     child.on("exit", function(e, code) {
       child.kill();
     });
+    if (config.build) {
+      child.kill();
+    }
   });
   await bundler.bundle();
 })();
