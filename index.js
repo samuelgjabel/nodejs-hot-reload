@@ -30,7 +30,8 @@ let config = {
   cacheDir: path.resolve(_dir, args.cacheDir ? args.cacheDir : "./.cache"),
   minify: args.minify ? true : false,
   cache: args.cache === false ? false : true,
-  bundleNodeModules: args.bundleNodeModules ? true : false
+  bundleNodeModules: args.bundleNodeModules ? true : false,
+  build: args.build ? true : false
 };
 
 const outSplit = config.entry.split("/");
@@ -48,7 +49,7 @@ console.log(`Entry: ${chalk.blue(config.entry)}`);
 const options = {
   scopeHoist: config.scopeHoist,
   outDir: config.outDir,
-  watch: true,
+  watch: args.build ? false : true,
   minify: false,
   sourceMaps: false,
   target: "node",
