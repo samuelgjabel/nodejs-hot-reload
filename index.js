@@ -27,7 +27,7 @@ let config = {
   scopeHoist: args.scopeHoist ? true : false,
   outDir: path.resolve(_dir, args.out ? args.out : "./build"),
   entry: path.resolve(_dir, args.entry ? args.entry : "./src/index.js"),
-  cacheDir: path.resolve(_dir, args.cacheDir ? args.cacheDir : "./cache"),
+  cacheDir: path.resolve(_dir, args.cacheDir ? args.cacheDir : "./.cache"),
   minify: args.minify ? true : false,
   cache: args.cache === false ? false : true,
   bundleNodeModules: args.bundleNodeModules ? true : false
