@@ -17,13 +17,17 @@ or
 - for `.js`
 
 ```json
-  "scripts": {"watch":"npx nodejs-hot-reload entry=./src/app.js outDir=./build"},
+  "scripts": {
+    "watch":"npx nodejs-hot-reload entry=./src/app.js outDir=./build"
+    },
 ```
 
 - or for `.ts`
 
 ```json
-  "scripts": {"watch":"npx nodejs-hot-reload entry=./src/app.ts outDir=./build"},
+  "scripts": {
+    "watch":"npx nodejs-hot-reload entry=./src/app.ts outDir=./build"
+    },
 ```
 
 2. run script `npm run watch` or `yarn watch`
