@@ -4,7 +4,7 @@ const a = process.argv.slice(2);
 const _dir = process.cwd();
 const path = require("path");
 const chalk = require("chalk");
-const Bundler = require("parcel-bundler");
+const Bundler = require("./parcel-bundler-fork");
 
 const child_process = require("child_process");
 const fs = require("fs");
