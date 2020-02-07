@@ -1,6 +1,6 @@
 {
   "name": "nodejs-hot-reload",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Node.js hot reloading library for faster development!",
   "main": "index.js",
   "repository": "https://github.com/samuelgjabel/nodejs-hot-reload.git",
