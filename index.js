@@ -31,7 +31,8 @@ let config = {
   minify: args.minify ? true : false,
   cache: args.cache === false ? false : true,
   bundleNodeModules: args.bundleNodeModules ? true : false,
-  build: args.build ? true : false
+  build: args.build ? true : false,
+  sourceMaps: args.sourceMaps ? true : false
 };
 
 const outSplit = config.entry.split("/");
@@ -50,8 +51,8 @@ const options = {
   scopeHoist: config.scopeHoist,
   outDir: config.outDir,
   watch: args.build ? false : true,
-  minify: false,
-  sourceMaps: false,
+  minify: args.minify,
+  sourceMaps: args.sourceMaps,
   target: "node",
   cache: config.cache,
   cacheDir: config.cacheDir,
