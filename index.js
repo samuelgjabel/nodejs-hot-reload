@@ -4,7 +4,7 @@ const a = process.argv.slice(2);
 const _dir = process.cwd();
 const path = require("path");
 const chalk = require("chalk");
-const Bundler = require("./parcel-bundler-fork-s");
+const Bundler = require("parcel-bundler");
 
 const child_process = require("child_process");
 const fs = require("fs");
@@ -42,9 +42,9 @@ const fileExtension = fileExtensionSplit[fileExtensionSplit.length - 1];
 outFile = outFile.replace(`.${fileExtension}`, ".js");
 const outFileFullPath = `${config.outDir}/${outFile}`;
 
-if (fs.existsSync(outFileFullPath)) {
-  fs.unlinkSync(outFileFullPath);
-}
+// if (fs.existsSync(outFileFullPath)) {
+//   fs.unlinkSync(outFileFullPath);
+// }
 console.log(`Entry: ${chalk.blue(config.entry)}`);
 
 const options = {
@@ -52,7 +52,7 @@ const options = {
   outDir: config.outDir,
   watch: args.build ? false : true,
   minify: args.minify,
-  sourceMaps: args.sourceMaps,
+  sourceMaps: false,
   target: "node",
   cache: config.cache,
   cacheDir: config.cacheDir,
